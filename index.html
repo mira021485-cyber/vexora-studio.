@@ -146,14 +146,14 @@
 <script>
   // GANTI 628xxxxxxxxxx dengan nomor WhatsApp pribadi Anda.
   // Gunakan kode negara 62, tanpa tanda +, spasi, atau tanda hubung.
-  const WHATSAPP_NUMBER = "628xxxxxxxxxx";
+  const WHATSAPP_NUMBER = "6283160107605";
   const message = encodeURIComponent("Halo VEXORA STUDIO, saya ingin bertanya tentang layanan Anda.");
   const wa = document.getElementById("whatsappLink");
   if (/^62\d{8,15}$/.test(WHATSAPP_NUMBER)) {
     wa.href = `https://wa.me/${WHATSAPP_NUMBER}?text=${message}`;
     wa.parentElement.nextElementSibling.textContent = "Pemesanan melalui WhatsApp pribadi.";
   } else {
-    wa.href = "https://wa.me/";
+    wa.href = "https://wa.me/6283160107605
   }
   document.getElementById("year").textContent = new Date().getFullYear();
 </script>
